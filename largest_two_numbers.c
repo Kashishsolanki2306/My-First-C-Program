@@ -1,23 +1,23 @@
 #include<stdio.h>
 int main()
 {
-   int num;
+   int a, b;
 
-   printf("Enter a number:");
-   scanf("%d", &num);
+   printf("Enter two numbers:");
+   scanf("%d %d", &a, &b);
 
-   if (num > 0)
-  {
-   printf("Positive Number");
-  }
-  else if (num < 0)
-  {
-   printf("Negative Number");
-  }
-  else
-  {
-   printf("zero");
-  }
+   if (a > b)
+   {
+     printf("A is greater");
+   }
+   else if (b > a)
+   {
+     printf("B is greater");
+   }
+   else
+   {
+     printf("Both numbers are equal");
+   }
 
-retutn 0;
+ return 0;
 }
